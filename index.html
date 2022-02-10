@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yordi Alcántara Paico</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--Estilos-->
+
+</head>
+<body>
+    <header class="header_yor">
+        <a class="tituloc" href="#"><img width="40px" height="40px" src="./imagenes//usuario.png" alt=""><h1>Yordi</h1></a>
+        <nav class="nav__yor">
+            <ul>
+                <li><a class="select_page">Perfil</a></li>
+                <li><a href="#seccion__informacion">Información</a></li>
+                <li><a href="index.html">Publicaciones</a></li>
+                <li><a href="index.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <div class="bares" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class=" offcanvas offcanvas-start" id="demo">           
+            <div class="offcanvas-body">
+                <div class="tutle__usuario">
+                    <div class="usuario"><img src="./imagenes//usuario.png" alt=""></div>
+                    <div class="usuario-datos">
+                        <h1>Yordi Alcántara Paico</h1>
+                        <p>Ingeniero de Sistemas</p>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="index.html">Perfil</a></li>
+                    <li><a href="#seccion__informacion">Información</a></li>
+                    <li><a href="index.html">Publicaciones</a></li>
+                    <li><a href="index.html">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container main">
+            <section class="section portada">
+                    <img class="porta_usuar" title="portada" src="./imagenes/portada1.jpg">
+                    <div class="portadas_datos">
+                        <div class="portadas_foto">
+                            <img data-bs-toggle="modal" data-bs-target="#myModal" src="./imagenes//usuario.png" alt="">
+                        </div>
+                        <div class="portadas_info">
+                            <h2>Yordi Alcántara Paico</h2>
+                            <p>Estudiante de Ingeniería de sistemas</p>
+                        </div>
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">   
+                                    <div class="modal-body">
+                                        <img src="/imagenes//usuario.png" alt=""> 
+                                        <button title="cerrar" type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <div id="seccion__informacion"></div>
+            <section class="section informacion">
+                
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#informacion">Información</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#fotos">Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#historias">Historias</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <!--informacion-->
+                    <div class="tab-pane container active" id="informacion">
+                        <div class="perfilprofecti w3-card">
+                            <div class="aside__info">
+                                <div class=" w3-bar-block w3-light-grey w3-card">
+                                    <h5 class="w3-bar-item">Datos</h5>
+                                    <button class="dark w3-bar-item w3-button tablink" onclick="openCity(event, 'Perfil')">Perfil profesional</button>
+                                    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Formación')">Formación académica</button>
+                                    <button class="dark w3-bar-item w3-button tablink" onclick="openCity(event, 'Conocimientos')">Conocimientos</button>
+                                    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Contactos')">Contactos</button>
+                                </div>
+                            </div>
+                            <div class="section__info">
+                                <div class="cont__infor--todo">
+                                    <div id="Perfil" class="active w3-container city w3-animate-left" style="display:none">
+                                        <h2>Mi perfil Profesional</h2>
+                                            <p>
+                                                Soy estudiante de Ingeniería de
+                                                Sistemas, soy una persona con un
+                                                alto sentido de responsabilidad, me
+                                                apasiona trabajar en equipo y ser
+                                                líder en ello.
+                                            </p>
+                                            <p>
+                                                Cuento con conocimientos básicos
+                                                de desarrollo de aplicaciones de
+                                                escritorio, Web, Base de Datos, etc.
+                                                Además con muy altas expectativas
+                                                de superación personal, aprender
+                                                nuevas cosas, con la capacidad de
+                                                afrontar cualquier hecho dentro de
+                                                un equipo.
+                                                Actualmente estoy buscando un
+                                                nuevo ámbito profesional en el que
+                                                pueda comenzar a desarrollar mi
+                                                carrera profesional.
+                                            </p>
+                                    </div>
+                                    <div id="Formación" class="w3-container city w3-animate-left formacion"  style="display:none">
+                                        <h2>Mi formación académica</h2>
+                                        <ol>
+                                            <li>Universidad Nacional de Cajamarca</li>
+                                            <p>| 2019 - actualidad. Cajamarca|</p>
+                                            <p>- Soy estudiante de 6to ciclo de Ingeniería de Sistemas
+                                                en la Universidad Nacional de Cajamarca.</p>
+                                            <li>Institución Educativa Divino Maestro Mollepampa</li>
+                                            <p>| 2005 – 2017. Cajamarca|</p>
+                                        </ol>
+                                        <br>
+                                    </div>
+                                    <div id="Conocimientos" class="w3-container city w3-animate-left" style="display:none">
+                                        <h2>Mis conocimientos</h2>
+                                        <ol>
+                                            <li>Conocimiento nivel intermedio de: Excel, Word,
+                                                Power Point.</li>
+                                            <li>Conocimiento intermedio de Photoshop y AutoCAD.</li>
+                                            <li>Conocimiento de lenguajes de programación: C#,
+                                                JAVA, Python, Java Script, Matlab básico.</li>
+                                            <li>Conocimiento intermedio de HTML 5 y CSS 3.</li>
+                                            <li>Conocimiento de Base de Datos SQL en: SQL
+                                                Server y MYSQL.</li>
+                                            <li>Conocimiento intermedio de React Js.</li>
+                                            <li>Conocimiento en Base de Datos no relacional en:
+                                                Firebase de Google.</li>
+                                        </ol>
+                                    </div>
+                                    <div id="Contactos" class="cont-tacto w3-container city w3-animate-left formacion"  style="display:none">
+                                        <h2>Mi información de contacto</h2>
+                                        <p><i class="fa fa-phone"></i> 930 700 942</p>
+                                        <p>Correo: yalcantarap19_2@unc.edu.pe</p>
+                                        <p><i class="fab fa-whatsapp"></i></i> 930 700 942</p>
+                                        <p><i class="fab fa-facebook"></i>   <a href="#"> Yordi Alcántara</a></p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--informacion-->
+
+                    <!--fotos-->
+                    <div class="tab-pane container fade" id="fotos">
+                        <div class="row fotos__galeria w3-animate-zoom">
+                            <div class="foto col-md-4 col-lg-4 col-4 col-6 ">
+                                <div class="cont__foto">
+                                    <img src="https://miro.medium.com/max/1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="foto col-md-4 col-lg-4 col-4 col-6 ">
+                                <div class="cont__foto">
+                                    <img src="https://comofuncionaque.com/wp-content/uploads/2015/03/La-tecnologia-ha-evolucionado-mucho-a-lo-largo-de-los-anos-con-el-fin-de-volvernos-la-vida-mas-facil.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="foto col-md-4 col-lg-4 col-4 col-6 ">
+                                <div class="cont__foto">
+                                    <img src="https://concepto.de/wp-content/uploads/2014/08/tecnologia-e1551386720574-800x412.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="foto col-md-4 col-lg-4 col-4 col-6 ">
+                                <div class="cont__foto">
+                                    <img src="https://comofuncionaque.com/wp-content/uploads/2015/03/La-tecnologia-ha-evolucionado-mucho-a-lo-largo-de-los-anos-con-el-fin-de-volvernos-la-vida-mas-facil.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fotos-->
+
+                    <!--historias-->
+                    <div class="tab-pane container fade" id="historias">
+                        <div class="cont_history-todo">
+                            <div class="spinner-border"></div>
+                        </div>
+                    </div>
+                    <!--historias-->
+
+                    
+                
+                </div>
+                <div class="progress container">
+                    <div class="progress-bar" style="width:70%">70%</div>
+                  </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p style="text-align: center"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Yordi Alcántara Paico todos los derechos reservados</p>
+    </footer>
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " w3-red";
+        }
+    </script>
+
+</body>
+</html>

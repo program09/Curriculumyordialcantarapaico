@@ -1,0 +1,283 @@
+main{
+    padding-top:70px;
+    width: 100%;
+    background: rgb(233, 233, 233);
+}
+
+.main{
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+/*seccion portada*/
+.portada{
+    height: auto;
+}
+.portada img{
+    width: 100%;
+    
+}
+
+.porta_usuar{
+    z-index: 444;
+}
+
+.portadas_foto{
+    width:150px;
+    border-radius:50%;
+    border: 2px solid rgb(233, 233, 233);
+    z-index: 333;
+}
+.portadas_foto img{
+    border-radius:50%;
+}
+
+.portadas_datos{
+    padding-left:40px;
+    padding-right:40px;
+    margin-top: -75px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.portadas_info{
+    padding-top: 70px;
+}
+
+.portadas_info h2{
+    font-size: 20px;
+    padding:10px;
+}
+.portadas_info p{
+    margin-top: -20px;
+    font-size: 15px;
+    padding-left: 10px;
+    color:rgb(63, 59, 59);
+}
+/*seccion portada*/
+
+
+
+/*seccion informacion*/
+
+
+
+.informacion{
+    width: 100%;
+    height: auto;
+}
+
+
+.nav .active{
+    background:transparent !important;
+    border: 0 !important;
+    border-bottom: 4px solid rgb(43, 43, 43) !important;
+}
+
+.perfilprofecti{
+    margin-top: 5px;
+    width: 100%;
+    display:flex;
+    border: 0px solid rgb(27, 27, 27);
+
+}
+
+
+.aside__info{
+    width: 30%;
+    height: auto;
+    padding:10px;
+}
+
+.section__info{
+    width: 70%;
+    padding:10px;
+}
+
+.section__info p {
+    text-align: justify;
+    padding-right: 10px;
+}
+.section__info h2 {
+   padding-left:15px;
+}
+
+.w3-bar-block button{
+    width: 100% !important;
+}
+
+.formacion ol li{
+    font-weight: 999;
+}
+
+.city{
+    margin: 0 !important;
+    padding:0;
+    width: 100% !important;
+}
+
+.fotos__galeria{
+    padding-top: 10px !important;
+}
+.foto{
+    padding: 10px !important;
+}
+
+.cont__foto{
+    width: 100%;
+    height: 100%;
+    border: 0px solid rgb(209, 209, 209);
+}
+.cont__foto img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.cont-tacto p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dark{
+    background: rgb(224, 220, 220);
+}
+/*seccion informacion*/
+
+
+
+
+
+
+/*responsive*/
+@media (max-width: 760px){
+    .portadas_foto{
+        width:100px;
+    }
+    
+    .portadas_datos{
+        padding-left:40px;
+        margin-top: -50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .portadas_info{
+        padding-top: 50px;
+    }
+    
+    .portadas_info h2{
+        font-size: 18px;
+        padding:10px;
+    }
+    .portadas_info p{
+        margin-top: -20px;
+        font-size: 13px;
+        padding-left: 10px;
+        color:rgb(63, 59, 59);
+    }
+}
+
+@media (max-width: 560px) {
+    .perfilprofecti{
+        width: 100%;
+        display:block;
+    
+    }
+    
+    
+    .aside__info{
+        width: 100%;
+        height: auto;
+        padding:10px;
+        border-right: 0px solid rgb(36, 36, 36);
+    }
+    
+    .section__info{
+        width: 100%;
+        padding:10px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .portadas_foto{
+        width:90px;
+    }
+    
+    .portadas_datos{
+        padding-left:30px;
+        padding-right:30px;
+        margin-top: -50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .portadas_info{
+        padding-top: 40px;
+    }
+    
+    .portadas_info h2{
+        font-size: 16px;
+        padding:10px;
+    }
+    .portadas_info p{
+        margin-top: -20px;
+        font-size: 13px;
+        padding-left: 10px;
+        color:rgb(63, 59, 59);
+    }
+}
+
+
+@media (max-width: 470px){
+    .portadas_foto {
+        width:100%;
+        border:0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .portadas_foto img{
+        width:90px;
+        border-radius: 50%;
+        border: 2px solid rgb(233, 233, 233);
+    }
+    
+    .portadas_datos{
+        padding-left:30px;
+        padding-right:30px;
+        margin-top: -50px;
+        width: 100%;
+        height: auto;
+        display: block !important;
+        align-items: center;
+    }
+    
+    .portadas_info{
+        width:100%;
+        margin-top: -50px;
+        text-align: center;
+    }
+    
+    .portadas_info h2{
+        margin-top: 10px;
+        font-size: 16px;
+        padding:0;
+    }
+    .portadas_info p{
+        padding:0;
+        margin-top: -10px;
+        font-size: 13px;
+        color:rgb(63, 59, 59);
+    }
+}
+
+/*responsive*/
+
